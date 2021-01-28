@@ -4,11 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Hamburger from "./context/HamburgerContext";
+
 ReactDOM.render(
   <React.StrictMode>
-    <Hamburger>
+      {/* Uygulamayı sarmalamamız gereken context component'i */}
       <App />
-    </Hamburger>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -4,7 +4,7 @@ import products from "../../products";
 import "./Menu.css";
 const Menu = () => {
   const {
-    selectedIngredients,
+    /* Context'ten ihtiyacımız olan state */
     setSelectedIngredients,
     getCalculatedTotalPrice,
   } = useContext(HamburgerContext);
@@ -26,7 +26,7 @@ const Menu = () => {
   };
 
   const handleRemoveIngredient = (ingredient) => {
-    let ingredients = [...selectedIngredients];
+    let ingredients = [ /* Seçilen malzemeler */];
 
     const existIngredient = ingredients.find(
       (item) => item.name === ingredient.name
