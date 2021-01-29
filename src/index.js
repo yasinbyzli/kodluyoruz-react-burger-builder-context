@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Hamburger from "./context/HamburgerContext";
+import HamburgerContextProvider from "./context/HamburgerContext";
 
 ReactDOM.render(
   <React.StrictMode>
-      {/* Uygulamayı sarmalamamız gereken context component'i */}
+      {/* Uygulamayı context provider ile sarmalayınız */}
       <App />
   </React.StrictMode>,
   document.getElementById("root")
