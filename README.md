@@ -1,6 +1,6 @@
 ## Burger Builder
 
-
+3 farklı malzemeyle bir hamburger oluşturabildiğimiz bu küçük projede context-api pratiği yapacağız.
 
 <p align="center">
   <img src="" alt="Burger builder"/>
@@ -13,6 +13,7 @@
 
 ### Proje Hakkında
 
+Menüden eklenen bütün malzemeleri tutabilmek için HamburgerContext içerisinde useState hook'u ile bir array oluşturulmuştur. Seçilen malzemeleri barındıran bu array sayesinde getCalculatedTotalPrice fonksiyonu ile malzemelerin fiyatlarına göre toplam tutar hesaplanmaktadır. Malzeme çeşitleri ve fiyatlar ingredients.js içerisindedir.
 
 ### Yapılacaklar
 
