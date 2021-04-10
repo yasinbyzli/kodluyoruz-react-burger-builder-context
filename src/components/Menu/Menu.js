@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { HamburgerContext } from "../../context/HamburgerContext";
 import ingredients from "../../ingredients";
 import "./Menu.css";
+
 const Menu = () => {
   const {
     /* Context'te bulunan ihtiyacımız olan state */
+    selectedIngredients,
     setSelectedIngredients,
-    getCalculatedTotalPrice,
+    getCalculatedTotalPrice
   } = useContext(HamburgerContext);
 
   const handleAddIngredient = (ingredient) => {
@@ -26,7 +28,7 @@ const Menu = () => {
   };
 
   const handleRemoveIngredient = (ingredient) => {
-    let ingredients = [ /* Seçilen malzemeler */];
+    let ingredients = [...selectedIngredients];
 
     const existIngredient = ingredients.find(
       (item) => item.name === ingredient.name
